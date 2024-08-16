@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Mukta", sans-serif;
+    background: #40bb6a;
+    transition: background-color .5s;
+}
+nav {
+    
+    background: #17672f;
+    height: 85px;
+    width: 100%;
+}
+label.logo {
+    padding: 0 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+}
+a:hover{
+    color: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+        @media (max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #408029;;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+                z-index:2;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            a:hover{
+                color: black;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+            
+        }
+
+/*---------------HOME----------------------*/
+
+main{
+    display: flex;
+    background-color: #40bb6a;    
+}
+.item{
+    max-width: 570px;
+    margin:10%;
+   
+}
+.item img{
+    width: 100%;
+    border: solid 10px;
+   
+}
+.foto{
+    order:2;
+    margin-top: -11px;
+}
+.text{
+    order:1;
+    width: 50%;
+    margin-left: 10%;
+    padding-top: 43px;
+    margin-top:39px;
+}
+
+.subtext1{
+    font-size: 21px;
+    font-weight: 450;
+    color: #a8d3e4;
+}
+.subtext2{
+    width: 1500px;
+}
+.subtext2 p{
+  margin-top: 18px;
+  font-size: 82px;
+  font-weight: 700;
+  color: #a8d3e4;
+}
+footer{
+    margin-top: 40px;
+    height: 55px;
+    width: 100%;
+    background-color: #17672f;
+}
+footer p{
+    padding: 6px;
+    margin-left: 50px;
+    color: #22255d;
+}
+@media (max-width: 952px){
+    main{
+        flex-direction: column;
+    }
+    .foto{
+        order:1;
+        margin: auto 10%;
+    }
+    .text{
+        order:2;
+        width: 90%;
+        margin: auto;
+    }
+    .text p{
+        width: 100%;
+        text-align: center;
+    }
+    .item{
+        max-width: 375px;
+        margin-right: initial 10% initial initial;
+      
+    }
+    footer{
+        height: 65px;
+       
+    }
+   
+    footer p{
+        padding-left: 3px;
+        padding: 19px;
+    }
+    
+   
+}
+
+/*--------figuren---------*/
+.wrap{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.fotos{
+    width: 500px;
+    
+}
+
+
+
+
+.fotos img {
+    cursor: pointer;
+    transition: opacity .5s;
+    border:solid 10px;
+    border-radius: 14px;
+   
+}
+#ei {
+ 
+margin-top:100px;
+
+}
+#ei img:hover{
+    content:url("fotos/MAR/EiBJuli.jpg")  
+}
+/* #cocodril{
+     margin: 90%; 
+} */
+#cocodril img{
+    width: 100%; 
+}
+#cocodril img:hover {
+    content: url("fotos/MAR/krokodilB.jpg");
+}
+#medusas img{
+   width: 100%; 
+   border-radius: 284px;
+ 
+}/*
+#medusas img:hover{
+    content:url("fotos/MedusasPajaro/medusaB.jpeg")
+} */
+/* #pajarraco{
+   / margin: 30%; 
+} */
+#pajarraco img:hover{
+    content:url("fotos/MedusasPajaro/pajaritoB.jpeg")
+}
+/* #serpiente{
+     margin:0 auto auto 90% 
+} */
+#serpiente img{
+ width: 100%; 
+}
+
+#serpiente img:hover {
+    content:url("fotos/MAR/serpienteBmobil.jpg");
+}
+
+@media screen and (max-width: 810px){
+    .fotos {
+        max-width: 370px;
+    }
+    .fotos img{
+        width: 100%;
+    }
+}
+
+
+ 
+  /*------------------ ABOUT ---------------------*/
+
+  .theaterstück{
+    margin:10px;
+  }
+  .mar{
+    margin:10px;
+  }
+  main{
+    margin: 10px;
+  }
+  .fotocv{
+    max-width: 200px;
+  }
+  .fotocv img{
+    width: 100%;
+  }
+  @media screen and (min-width:810px){
+    main p {
+        font-size: 50px;
+    }
+    main h3 {
+        font-size: 50px;
+    }
+    .fotocv img{
+        float:left;
+    }
+    .fotocv{
+        margin: 22px;
+    }
+   
+  }
+
+  /*---------GALLERY-------------------*/
+
+            /*---- Això és el container de les totes fotos  -----*/
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+                margin-top:20px;
+            }
+
+            /*------- Amaga les fotos per defecte ------------------*/
+            .mySlides {
+                display: none;
+            }
+
+            .slideshow-container img{
+                vertical-align: middle;
+            }
+
+            /*-------- Next & Previous Buttons -----------*/
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /*-------- Next button to the right ------------*/
+
+            .next{
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+
+            /*-------- The dots ------------*/
+
+            /* .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            } */
+
+            /* .active, .dot:hover {
+                background-color: #717171;
+            } */
+
+            /*--------- Fading animation ------------------*/
+
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            .autoriafoto a{
+                color: #5a0403;
+            }
+
+            .autoriafoto a:hover{
+                color:aliceblue;
+            }
+
+            @keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+
+            @media screen and (max-width: 810px){
+                .autoriafoto{
+                    margin-bottom: 653px;
+                }
+                .slideshow-container {
+                    margin: 40px auto;
+                }
+            }
+
+
+            
+
+
+
+
+
+
+
