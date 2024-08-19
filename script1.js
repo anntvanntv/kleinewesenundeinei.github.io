@@ -17,6 +17,7 @@ huevo.addEventListener('click', huevO => {
     document.body.style.backgroundColor = "#ffffff"
         function music_stop() {
             audioElementOu.pause();
+             audioElementCocodril.currentTime = 0;
         }
 })
 
