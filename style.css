@@ -168,13 +168,13 @@ footer p{
         text-align: center;
     }
       .subtext2{
-        width: 370px;
-        margin-top: 61px;
+        max-width: 365px;
         margin: 61px auto auto; 
    }
    .subtext2 p{
-       font-size: 43px;
+       font-size: 38px;
         font-weight: 600;
+       width: 100%;
    }   
     .item{
         max-width: 375px;
