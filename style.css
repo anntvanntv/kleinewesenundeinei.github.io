@@ -59,6 +59,11 @@ a:hover{
     nav ul li a{
         font-size: 16px;
     }
+    nav ul{
+         float: center;
+        margin-right: auto;
+        margin-left: auto;
+    }    
 }
         @media (max-width: 858px){
             .checkbtn{
