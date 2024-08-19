@@ -12,7 +12,7 @@ AOS.init({
 
 let huevo = document.getElementById("ei")
 let audioElementOu = new Audio("veus/haaaalloou.mp3")
-huevo.addEventListener('mouseover', huevO => {
+huevo.addEventListener('click', huevO => {
     audioElementOu.play()
     document.body.style.backgroundColor = "#ffffff"
 })
