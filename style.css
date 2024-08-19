@@ -207,7 +207,7 @@ margin-top:100px;
 
 }
 #ei img:hover{
-    content:url("fotos/MAR/EiBJuli.jpg")  
+    content:url("MAR/EiBJuli.jpg")  
 }
 /* #cocodril{
      margin: 90%; 
@@ -216,21 +216,15 @@ margin-top:100px;
     width: 100%; 
 }
 #cocodril img:hover {
-    content: url("fotos/MAR/krokodilB.jpg");
+    content: url("MAR/krokodilB.jpg");
 }
 #medusas img{
    width: 100%; 
    border-radius: 284px;
  
-}/*
-#medusas img:hover{
-    content:url("fotos/MedusasPajaro/medusaB.jpeg")
-} */
-/* #pajarraco{
-   / margin: 30%; 
-} */
+}
 #pajarraco img:hover{
-    content:url("fotos/MedusasPajaro/pajaritoB.jpeg")
+    content:url("MedusasPajaro/pajaritoB.jpeg")
 }
 /* #serpiente{
      margin:0 auto auto 90% 
@@ -240,7 +234,7 @@ margin-top:100px;
 }
 
 #serpiente img:hover {
-    content:url("fotos/MAR/serpienteBmobil.jpg");
+    content:url("MAR/serpienteBmobil.jpg");
 }
 
 @media screen and (max-width: 810px){
