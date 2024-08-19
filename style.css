@@ -162,9 +162,15 @@ footer p{
         width: 100%;
         text-align: center;
     }
-    .subtext2{
+      .subtext2{
         width: 370px;
-    }
+        margin-top: 61px;
+        margin: 61px auto auto; 
+   }
+   .subtext2 p{
+       font-size: 43px;
+        font-weight: 600;
+   }   
     .item{
         max-width: 375px;
         margin-right: initial 10% initial initial;
