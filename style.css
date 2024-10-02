@@ -27,15 +27,17 @@ nav ul {
 }
 nav ul li{
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+     line-height: 80px; 
+    margin: 0 25px;
 }
 nav ul li a{
     color: white;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight:200;
+    text-transform: uppercase;
 }
 a:hover{
-    color: #1b9bff;
+    color: #40bb6a;
     transition: .5s;
 }
 
@@ -51,148 +53,59 @@ a:hover{
 #check{
     display: none;
 }
-@media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-    nav ul{
-         float: center;
-        margin-right: auto;
-        margin-left: auto;
-    }    
+         
+label.logo{
+    padding-left: 50px;
 }
-        @media (max-width: 858px){
-            .checkbtn{
-                display: block;
-            }
-            ul{
-                position: fixed;
-                width: 100%;
-                height: 100vh;
-                background: #408029;;
-                top: 80px;
-                left: -100%;
-                text-align: center;
-                transition: all .5s;
-                z-index:2;
-            }
-            nav ul li{
-                display: block;
-                margin: 50px 0;
-                line-height: 30px;
-            }
-            nav ul li a{
-                font-size: 20px;
-            }
-            a:hover{
-                color: black;
-            }
-            #check:checked ~ ul{
-                left: 0;
-            }
-            
-        }
+
 
 /*---------------HOME----------------------*/
 
 main{
     display: flex;
-    background-color: #40bb6a;    
+    flex-direction: column;
+    flex-wrap:wrap;
+    background-color: #40bb6a;
+}
+.adalt{
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 40px;
 }
 .item{
     max-width: 570px;
-    margin:10%;
-   
+    margin:10%; 
 }
 .item img{
     width: 100%;
-    border: solid 10px;
-   
+    border: solid 10px;   
 }
 .foto{
     order:2;
-    margin-top: -11px;
-}
-.text{
-    order:1;
-    width: 50%;
-    margin-left: 10%;
-    padding-top: 43px;
-    margin-top:39px;
+    margin-left:80px;
+ 
+} 
+.text1{
+    width:50%;
+    font-weight: 800;
+    font-size: 2.5vw;
+    color: #17672f;
+    margin-left:initial;
+    margin-top: 39px;
 }
 
-.subtext1{
-    font-size: 21px;
-    font-weight: 450;
-    color: #a8d3e4;
-}
-.subtext2{
-    width: 1500px;
-}
-.subtext2 p{
+.abaix p{
   margin-top: 18px;
-  font-size: 82px;
+  font-size: 80px;
   font-weight: 700;
-  color: #a8d3e4;
+  color: #17672f;
+  /* color: #a8d3e4;    color blau clar*/
+  margin-left: initial;
+  margin: 5%;
+  text-align: center;
 }
-footer{
-    margin-top: 40px;
-    height: 55px;
-    width: 100%;
-    background-color: #17672f;
-}
-footer p{
-    padding: 6px;
-    margin-left: 50px;
-    color: #22255d;
-}
-@media (max-width: 952px){
-    main{
-        flex-direction: column;
-    }
-    .foto{
-        order:1;
-        margin: auto 10%;
-    }
-    .text{
-        order:2;
-        width: 90%;
-        margin: auto;
-    }
-    .text p{
-        width: 100%;
-        text-align: center;
-    }
-      .subtext2{
-        max-width: 365px;
-        margin: 61px auto auto; 
-   }
-   .subtext2 p{
-       font-size: 37px;
-        font-weight: 600;
-       width: 100%;
-   }   
-    .item{
-        max-width: 375px;
-        margin-right: initial 10% initial initial;
-      
-    }
-    footer{
-        height: 65px;
-       
-    }
-   
-    footer p{
-        padding-left: 3px;
-        padding: 19px;
-    }
-    
-   
-}
+
+
 
 /*--------figuren---------*/
 .wrap{
@@ -200,65 +113,43 @@ footer p{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.fotos{
-    width: 500px;
-    
+.wrap p{
+    color:#092b13;
 }
-
-
-
-
+.fotos{
+    width: 500px;    
+}
 .fotos img {
     cursor: pointer;
     transition: opacity .5s;
     border:solid 10px;
-    border-radius: 14px;
-   
+    border-radius: 14px;   
 }
 #ei {
- 
 margin-top:100px;
-
+}
+#ei img, #cocodril img, #medusas img, #pajarraco img, #serpiente img {
+    width: 100%;
 }
 #ei img:hover{
-    content:url("MAR/EiBJuli.jpg")  
+    content:url("dibuixos/Finals/2.BitxoFinal.png");  
 }
-/* #cocodril{
-     margin: 90%; 
-} */
-#cocodril img{
-    width: 100%; 
-}
+
+
 #cocodril img:hover {
-    content: url("MAR/krokodilB.jpg");
+    content: url("dibuixos/Finals/23.CocodrilsrientFinal.png");
 }
-#medusas img{
-   width: 100%; 
-   border-radius: 284px;
- 
-}
+
+
 #pajarraco img:hover{
-    content:url("MedusasPajaro/pajaritoB.jpeg")
-}
-/* #serpiente{
-     margin:0 auto auto 90% 
-} */
-#serpiente img{
- width: 100%; 
+    content:url("dibuixos/Finals/20.OcellamagatFinal.png")
 }
 
 #serpiente img:hover {
-    content:url("MAR/serpienteBmobil.jpg");
+    content:url("dibuixos/Finals/6.SerpFinal.png");
 }
 
-@media screen and (max-width: 810px){
-    .fotos {
-        max-width: 370px;
-    }
-    .fotos img{
-        width: 100%;
-    }
-}
+
 
 
  
@@ -273,27 +164,67 @@ margin-top:100px;
   main{
     margin: 10px;
   }
-  .fotocv{
-    max-width: 200px;
-  }
-  .fotocv img{
-    width: 100%;
-  }
-  @media screen and (min-width:810px){
-    main p {
-        font-size: 50px;
+
+   .theaterstück, .martext{
+        width: 60%;
+   }   
+    main .theaterstück p, .mar p {
+        margin-left: 28px;
+        text-align: left;
+        font-size: 25px;
+        color: #165128;
+        font-weight: 600;
     }
-    main h3 {
-        font-size: 50px;
+    main .theaterstück h3, .mar h3 {
+        margin-left: 28px;
+        margin-top: 25px;
+        font-size: 44px;
+        color:#165128;
+        font-weight: 800;
     }
     .fotocv img{
         float:left;
+        margin-right: 20px;
+        width: 100%;
     }
     .fotocv{
-        margin: 22px;
+        margin: 28px;
+        max-width: 200px;
+    }
+    .kontakt {
+        display:flex;
+        align-items: baseline;
+        justify-content: space-around;
+        margin-top: 128px;
+    }
+    .kontakt p, .impressum p{
+        color:#16512888;
+    }
+    .kontakt a, .impressum a{
+        color:#165128;
+        transition: ease 1s;
+    }
+    .kontakt a:hover{
+        color: #09ee27;
+    }
+    .insta a{
+        color:white;
+    }
+  
+    .impressum h3, .impressum h4{
+        color:#165128;
+        text-transform: uppercase;
+    }
+    .impressum h4{
+        margin-top: 30px;
+    }
+    .telefon, .adress, .name{
+        color:#165128;
     }
    
-  }
+ 
+   
+  
 
   /*---------GALLERY-------------------*/
 
@@ -342,23 +273,7 @@ margin-top:100px;
             }
 
 
-            /*-------- The dots ------------*/
-
-            /* .dot {
-                cursor: pointer;
-                height: 15px;
-                width: 15px;
-                margin: 0 2px;
-                background-color: #bbb;
-                border-radius: 50%;
-                display: inline-block;
-                transition: background-color 0.6s ease;
-            } */
-
-            /* .active, .dot:hover {
-                background-color: #717171;
-            } */
-
+        
             /*--------- Fading animation ------------------*/
 
             .fade {
@@ -366,11 +281,13 @@ margin-top:100px;
                 animation-duration: 1.5s;
             }
             .autoriafoto a{
-                color: #5a0403;
+                color: #092b13;
+                
             }
 
             .autoriafoto a:hover{
-                color:aliceblue;
+                color: #09ee27;
+                
             }
 
             @keyframes fade {
@@ -378,19 +295,204 @@ margin-top:100px;
                 to {opacity: 1}
             }
 
-            @media screen and (max-width: 810px){
-                .autoriafoto{
-                    margin-bottom: 653px;
-                }
-                .slideshow-container {
-                    margin: 40px auto;
-                }
-            }
+/*-------------------------------------- FOOTER ---------------------------------------*/
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+footer{
+    margin-top: 40px;
+    height: 55px;
+    width: 100%;
+    background-color: #17672f;
+}
+footer p{
+    padding: 6px;
+    margin-left: 50px;
+    color: #22255d;
+}
+footer a{
+    transition: ease 2s;
+}
+
+
+/* --------------------------------- SOCIAL MEDIA BUTTONS --------------------------------*/
+
+.fa {
+    padding: 15px;
+    /* font-size: 40px; */
+    /* width: 30px; */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .insta{
+    font-size: 25px;
+  }
 
             
+/*----------------------------- Max WIDTH -------------------------*/
+/*-------------------------- NAVEGADOR -----------------------------------------*/
 
 
+@media (max-width: 810px){
+         
+    nav ul{
+        float: center;
+        margin-right: auto;
+        margin-left: auto;
+    }    
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #408029;;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index:2;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        color: #17672f;
+        transition: .5s;
+        }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+ } 
+
+
+ /*------------------------------------- HOME ---------------------------*/
+
+ @media (max-width: 810px){
+    main{
+        flex-direction: column;
+    }
+    .adalt{
+        flex-direction: column;
+        margin-left: inherit;
+    }
+    .foto{
+        order:1;
+        margin: auto 10%;
+    }
+    .text1{
+        order:2;
+        width: 90%;
+        margin: auto;
+    }
+    .text1 p{
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+    }
+   
+   .abaix p{
+        text-align: center;
+        font-weight: 800;
+        font-size: 36px;
+       
+   }   
+    .item{
+        max-width: 375px;
+        margin-right: initial 10% initial initial;
+    }
+     footer{
+        height: 65px; 
+    }
+    footer p{
+        padding-left: 3px;
+        padding: 19px;
+    } 
+}
+
+
+/*-------------------------------------- FIGUREN ----------------------*/
+
+@media screen and (max-width: 810px){
+    .fotos {
+        max-width: 370px;
+    }
+    .fotos img{
+        width: 100%;
+    }
+}
+
+/*------------------------- GALERY ------------------------*/
+
+@media screen and (max-width: 810px){
+    .autoriafoto{
+        margin-bottom: 653px;
+    }
+    .slideshow-container {
+        margin: 40px auto;
+    }
+}
+
+/*--------------------------- ABOUT -----------------------------------*/
+
+@media (max-width: 969px){
+    .theaterstück, .martext{
+        width: 90%;
+        
+    }
+    main .theaterstück p, .mar p{
+        text-align: center;
+        /* margin-left: initial; */
+        font-size: 20px;
+    }
+    main .theaterstück h3, .mar h3 {
+        text-align: center;
+        margin-left:initial;
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width:500px){
+    .fotocv{
+        max-width: 100px;
+    }
+    main .theaterstück p, .mar p{
+        margin-left: initial;
+    }
+}
+
+/*-----------------------footer--------------------*/
+
+@media (max-width:665px){
+    footer {
+        justify-content: space-around;
+    }
+    footer p{
+        padding: 0px;
+        margin-left:0px;
+    }
+}
 
 
 
