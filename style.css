@@ -532,6 +532,9 @@ footer a{
     #serpiente img:hover {
         content:url("dibuixos/Finals/6.SerpFinalMobil.png");
     }
+     .wrap{
+        overflow-x: hidden;
+    }
     
 }
 
