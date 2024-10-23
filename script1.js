@@ -78,3 +78,20 @@ setTimeout(function (){
 }, 2000)
 
 
+
+/* OVERFLOW HIDDEN WITH CLOSED UL */
+
+function addRem() {
+            const check = document.getElementById("check");
+
+                if (check.checked) {
+                    document.body.style.overflow = "hidden"; 
+                    
+                }   else{
+                    document.body.style.overflow = "";
+                    }
+            }
+
+        check.addEventListener("click", addRem)
+    
+
