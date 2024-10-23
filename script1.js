@@ -92,9 +92,4 @@ function addRem() {
 
 check.addEventListener("click", addRem);
 
-/*----- API AOS-----*/
-
-AOS.init({
-            duration: 1200,
-        });
 
