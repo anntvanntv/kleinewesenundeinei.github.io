@@ -82,16 +82,14 @@ setTimeout(function (){
 /* OVERFLOW HIDDEN WITH CLOSED UL */
 
 function addRem() {
-            const check = document.getElementById("check");
+    const check = document.getElementById("check");
+        if (check.checked) {
+             document.body.style.overflow = "hidden"; 
+        }  else{
+            document.body.style.overflow = "";
+           }
+}
 
-                if (check.checked) {
-                    document.body.style.overflow = "hidden"; 
-                    
-                }   else{
-                    document.body.style.overflow = "";
-                    }
-            }
-
-        check.addEventListener("click", addRem)
+check.addEventListener("click", addRem);
     
 
