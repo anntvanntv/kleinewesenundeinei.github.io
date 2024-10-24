@@ -127,6 +127,23 @@
     </footer>
     <!-- <script src="script.js"></script> -->
     <script src="script1.js"></script>
+    <script>
+        function addRem() {
+            const check = document.getElementById("check");
+        
+                if (check.checked) {
+                    document.body.style.overflow = "hidden"; 
+                    
+                }   else{
+                    document.body.style.overflow = "";
+                    }
+            }
+        
+        
+        
+        
+        check.addEventListener("click", addRem);
+</script>
 </body>
 
 
