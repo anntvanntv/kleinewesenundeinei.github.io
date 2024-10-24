@@ -6,7 +6,18 @@ AOS.init({
     duration: 1200,
   }) */
 
+/* OVERFLOW HIDDEN WITH CLOSED UL */
 
+function addRem() {
+    const check = document.getElementById("check");
+        if (check.checked) {
+             document.body.style.overflow = "hidden"; 
+        }  else{
+            document.body.style.overflow = "";
+           }
+}
+
+check.addEventListener("click", addRem);
 
 
 
@@ -79,17 +90,6 @@ setTimeout(function (){
 
 
 
-/* OVERFLOW HIDDEN WITH CLOSED UL */
 
-function addRem() {
-    const check = document.getElementById("check");
-        if (check.checked) {
-             document.body.style.overflow = "hidden"; 
-        }  else{
-            document.body.style.overflow = "";
-           }
-}
-
-check.addEventListener("click", addRem);
 
 
