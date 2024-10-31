@@ -1,4 +1,5 @@
-This is a project for a childrens theaterplay.
-This is the first website that I published. I did the design (based on the design of the flyers of Maria Rigol). I composited the music of the play and I recorded the sound that you can hear on the website, I did and edited also the Drawings.
-For this project I used, HTML, CSS, Vanilla Javascript and I worked with some libraries.
-YOu can see my project in https://kleinewesenundeinei.com/ 
+
+This is a project for the children’s theater play Kleine Wesen und ein Ei, created by theater educator Mar Taules to support inclusive education. 
+This is the first website I published. I designed the site (based on Maria Rigol's flyer design). I composed the music for the play and recorded the audio featured on the website and I also created and edited the illustrations.
+For this project, I used HTML, CSS, vanilla JavaScript and some libraries. 
+You can view my project at kleinewesenundeinei.com."
