@@ -801,6 +801,21 @@ footer a{
     main .theaterstück p, .mar p{
         margin-left: initial;
     }
+    .datumtext{
+        padding:0;
+        display:inline;
+        line-height: 17px;
+        padding-top:3px;
+        padding-left: 3px;
+    }
+    .linea{
+        line-height: 17px;
+        margin-top: 7px;
+        margin-left: 3px;
+    }
+    .adressa{
+        margin-left:3px;
+    }
     .textnews{
         width: 100%;
         margin-left: 0;
@@ -814,4 +829,22 @@ footer a{
         padding-left:24px;
     }
 }
-
+@media(max-width:350px){
+    .newcontainer h2{
+        font-size: 32px;
+    }
+}
+@media(max-width:320px){
+    .newcontainer h2{
+        font-size: 30px;
+    }
+}
+@media(max-width:298px){
+    .newcontainer h2{
+        font-size:26px;
+        line-height: 28px;
+    }
+    .datumtext, .datum{
+        height:100px;
+    }
+}
