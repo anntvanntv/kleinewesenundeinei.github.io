@@ -41,13 +41,21 @@
 
         <div class="newcontainer">
             <h2>Bevorstehende Theaterauffüruhngen</h2>
-
             <div class="news prox">
-               
-             
-                  
-                
-             
+
+
+
+
+            </div>
+            <div class="textnews">
+                <p>Die Webseite wird regelmäßig aktualisiert. Vergiss nicht uns wieder zu besuchen, um die neuesten
+                    Termine für die nächsten Veranstaltungen zu erfahren. Wir sind im Urlaub. Komm nach den
+                    Ferien. Wir freuen uns auf deinen Besuch!</p>
+            </div>
+
+            <h2>Vergangene Theaterauffüruhngen</h2>
+
+            <div class="news past">
                 <div class="caixadatum juli">
                     <div class="datum juli">
                         <div class="tag">FR</div>
@@ -67,29 +75,23 @@
                         <div class="monat">JUL</div>
                     </div>
                     <div class="datumtext">
-                        <a href="https://www.berlin.de/stadtbibliothek-treptow-koepenick/bibliotheken/altglienicke/">10:00&nbsp;&nbsp;<span>- </span><strong>in
-                            Stadtbibliothek Altglienicke&nbsp;&nbsp;</strong><span>- </span>Ortolfstr. 182, 12524 Berlin</a>
+                        <a href="https://www.berlin.de/stadtbibliothek-treptow-koepenick/bibliotheken/altglienicke/">10:00&nbsp;&nbsp;<span>-
+                            </span><strong>in
+                                Stadtbibliothek Altglienicke&nbsp;&nbsp;</strong><span>- </span>Ortolfstr. 182, 12524
+                            Berlin</a>
                     </div>
                 </div>
-            </div>
-            <div class="textnews">
-                <p>Die Webseite wird regelmäßig aktualisiert. Vergiss nicht uns wieder zu besuchen, um die neuesten
-                    Termine für die nächsten Veranstaltungen zu erfahren.</p>
-            </div>
-
-            <h2>Vergangene Theaterauffüruhngen</h2>
-
-            <div class="news past">
                 <div class="caixadatum juni">
-                      <div class="datum juni">
+                    <div class="datum juni">
                         <div class="tag">DO</div>
                         <div class="nummertag">26</div>
                         <div class="monat">JUN</div>
                     </div>
                     <div class="datumtext">
                         <a href="https://www.nbhs.de/">15:00&nbsp;&nbsp;<span>- </span><strong>in
-                            Nachbarschaftsheim Schöneberg e. V. &nbsp;&nbsp;</strong><span>- </span>Holsteinische Straße 30
-                                12161 Berlin (Kia Programm Tempelhof-Schoneberg)</a> 
+                                Nachbarschaftsheim Schöneberg e. V. &nbsp;&nbsp;</strong><span>- </span>Holsteinische
+                            Straße 30
+                            12161 Berlin (Kia Programm Tempelhof-Schoneberg)</a>
                     </div>
                     <div class="datum juni">
                         <div class="tag">FR</div>
@@ -103,7 +105,7 @@
                     </div>
 
                 </div>
-                
+
                 <div class="caixadatum mai">
                     <div class="datum mai">
                         <div class="tag">SA</div>
@@ -127,7 +129,7 @@
                                 - </span><strong>in Einhorn Familienzentrum Friedrichshain&nbsp;&nbsp;</strong><span>
                                 - </span>Fredersdorferstr. 10, 10243 (Kia Kreuzberg)</a>
                     </div>
-                  
+
                 </div>
                 <div class="caixadatum feb">
                     <div class="datum feb">
@@ -189,6 +191,39 @@
     </div> <!----news----->
 
 
+
+
+
+
+    <footer>
+        <p> &copy kleinewesenundeinei 2025</p>
+        <p><a href="about.html#impressum">Contact</p></a>
+        <p><a href="about.html#impressum">Impressum</p></a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script1.js"></script>
+    <script>
+        function addRem() {
+            const check = document.getElementById("check");
+
+            if (check.checked) {
+                document.body.style.overflow = "hidden";
+
+            } else {
+                document.body.style.overflow = "";
+            }
+        }
+
+
+
+
+        check.addEventListener("click", addRem);
+    </script>
+</body>
+
+</html>
 
 
 
