@@ -65,8 +65,17 @@ label.logo{
 .marcologo img{
     width: 100%;
 }
-
-
+/*----------------LOGOS---------------------*/
+.logos{
+    display:flex;
+    justify-content: space-around;
+}
+.foto-logo{
+    max-width:100px;
+}
+.foto-logo img{
+    width:100%;
+}
 /*---------------HOME----------------------*/
 
 main{
@@ -74,6 +83,7 @@ main{
     flex-direction: column;
     flex-wrap:wrap;
     background-color: #40bb6a;
+    overflow-x: hidden;
 }
 .adalt{
     display: flex;
@@ -101,7 +111,6 @@ main{
     margin-left:initial;
     margin-top: 39px;
 }
-
 .abaix p{
   margin-top: 18px;
   font-size: 80px;
@@ -112,9 +121,6 @@ main{
   margin: 5%;
   text-align: center;
 }
-
-
-
 /*--------figuren---------*/
  .wrap{
     display: flex;  
@@ -142,25 +148,15 @@ margin-top:100px;
 #ei img:hover{
     content:url("dibuixos/Finals/2.BitxoFinal.png");  
 }
-
-
 #cocodril img:hover {
     content: url("dibuixos/Finals/23.CocodrilsrientFinal.png");
 }
-
-
 #pajarraco img:hover{
     content:url("dibuixos/Finals/20.OcellamagatFinal.png")
 }
-
 #serpiente img:hover {
     content:url("dibuixos/Finals/6.SerpFinal.png");
 }
-
-
-
-
- 
   /*------------------ ABOUT ---------------------*/
 
   .theaterstück{
@@ -172,7 +168,6 @@ margin-top:100px;
   main{
     margin: 10px;
   }
-
    .theaterstück, .martext{
         width: 60%;
    }  
@@ -221,7 +216,6 @@ margin-top:100px;
     .insta a{
         color:white;
     }
-  
     .impressum h3, .impressum h4{
         color:#165128;
         text-transform: uppercase;
@@ -232,16 +226,10 @@ margin-top:100px;
     .telefon, .adress, .name{
         color:#165128;
     }
-   
- 
-   
-  
-
   /*--------- NEWS -------------------*/
 .news{
     height: auto;
 }
-
 .newcontainer{
     display: flex;
     flex-direction: column;
@@ -268,7 +256,6 @@ margin-top:100px;
 .caixadatum.feb {
     margin-top: 35px !important;  
 }
-
 .datum {
   display: flex;
   flex-direction: column;
@@ -319,7 +306,6 @@ margin-top:100px;
     color: white;
   margin-right: 8px;
 }
-
 .hora{
     margin-right: 7px;
     font-size: 16px;
@@ -339,7 +325,6 @@ margin-top:100px;
   text-decoration-thickness: 2px;
   text-decoration-color: white;
  }
-
   .news a{
     color: #165128;
     font-size: 16px;
@@ -348,12 +333,10 @@ margin-top:100px;
   .news a:hover{
     color: #09ee27;
   }
-
   .news.pasades {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   .textnews {
     /* position:absolute;
     top: 581px; */
@@ -368,8 +351,6 @@ margin-top:100px;
   .textnews p{
     text-align:justify;
   }
-
-
   /*------------------ GALERIE -------------------------*/
 
             /*---- Això és el container de les totes fotos  -----*/
@@ -379,16 +360,13 @@ margin-top:100px;
                 margin: auto;
                 margin-top: 191px;
             }
-
             /*------- Amaga les fotos per defecte ------------------*/
             .mySlides {
                 display: none;
             }
-
             .slideshow-container img{
                 vertical-align: middle;
             }
-
             /*-------- Next & Previous Buttons -----------*/
             .prev, .next {
                 cursor: pointer;
@@ -404,20 +382,15 @@ margin-top:100px;
                 border-radius: 0 3px 3px 0;
                 user-select: none;
             }
-
             /*-------- Next button to the right ------------*/
-
             .next{
                 right: 0;
                 border-radius: 3px 0 0 3px;
             }
-
             .prev:hover, .next:hover {
                 background-color: rgba(0,0,0,0.8);
             }
 
-
-        
             /*--------- Fading animation ------------------*/
 
             .fade {
@@ -428,12 +401,10 @@ margin-top:100px;
                 color: #092b13;
                 
             }
-
             .autoriafoto a:hover{
                 color: #09ee27;
                 
             }
-
             @keyframes fade {
                 from {opacity: .4}
                 to {opacity: 1}
@@ -455,9 +426,10 @@ footer{
 footer p{
     padding: 6px;
     margin-left: 50px;
-    color: #22255d;
+    color: white;
 }
 footer a{
+    color:white;
     transition: ease 2s;
 }
 
@@ -653,6 +625,8 @@ footer a{
  @media (max-width: 810px){
     main{
         flex-direction: column;
+        margin: inherit;
+        flex-wrap: nowrap;
     }
     .adalt{
         flex-direction: column;
@@ -660,11 +634,11 @@ footer a{
     }
     .foto{
         order:1;
-        margin: auto 10%;
+        margin: auto 0;
     }
     .text1{
         order:2;
-        width: 90%;
+      width: 90%;
         margin: auto;
     }
     .text1 p{
@@ -676,12 +650,12 @@ footer a{
    .abaix p{
         text-align: center;
         font-weight: 800;
-        font-size: 36px;
+        font-size: 31px;
        
    }   
     .item{
         max-width: 375px;
-        margin-right: initial 10% initial initial;
+        margin:30px;
     }
      footer{
         height: 65px; 
@@ -787,10 +761,14 @@ footer a{
 @media (max-width:665px){
     footer {
         justify-content: space-around;
+        display:flex;
+        flex-direction: column;
+        height:78px;
     }
     footer p{
         padding: 0px;
         margin-left:0px;
+        font-size: 15px;
     }
 }
 
@@ -833,6 +811,7 @@ footer a{
         padding-right: 20px;
         padding-left:24px;
     }
+
 }
 
 /*------------- NEWS -------------*/
@@ -851,6 +830,18 @@ footer a{
   
     
 }
+
+/*---------KONTAKT--------------*/
+@media (max-width:393px){
+    .kontakt{
+        margin-left:20px;
+    }
+    .insta{
+        margin-right:10px;
+    }
+}
+
+/*---------NEWS-------------*/
 
 @media (max-width:350px){
     .news a {
@@ -872,3 +863,4 @@ footer a{
         padding-left: 4px;
     }
 }
+
