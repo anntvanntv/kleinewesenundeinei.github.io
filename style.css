@@ -226,6 +226,7 @@ margin-top:100px;
     .telefon, .adress, .name{
         color:#165128;
     }
+ 
   /*--------- NEWS -------------------*/
 .news{
     height: auto;
@@ -351,6 +352,15 @@ margin-top:100px;
   .textnews p{
     text-align:justify;
   }
+  .textnews a {
+    font-size: 26px !important;
+    color: black !important;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.textnews a:hover {
+    color: #09ee27 !important;
+}
   /*------------------ GALERIE -------------------------*/
 
             /*---- Això és el container de les totes fotos  -----*/
@@ -862,5 +872,11 @@ footer a{
         padding-right: 4px;
         padding-left: 4px;
     }
-}
+    .textnews a {
+        font-size: 19px !important;
+        color: black !important;
+        font-weight: 800;
+        text-decoration: underline;
+    }
 
+}
