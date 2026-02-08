@@ -829,6 +829,10 @@ footer a{
     .galeria-box {
         margin-top: 100px;
     }    
+    .galeria-box section h2 {
+        line-height: 23px;
+    }
+}
 }
 /*/---------------------- NEW ----------------------*/
 @media (max-width: 587px){
