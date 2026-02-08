@@ -731,6 +731,9 @@ footer a{
 /*------------------------- GALLERY ------------------------*/
 
 @media screen and (max-width: 810px){
+     .prev, .next {
+        top: 20%;
+    }
     .galeria-box {
         margin-left: 20px;
         margin-right: 20px;
@@ -822,6 +825,10 @@ footer a{
     .contentcookies{
         padding: 4vw 4vw; 
     }
+/*------------------------GALERIE------------------*/
+    .galeria-box {
+        margin-top: 100px;
+    }    
 }
 /*/---------------------- NEW ----------------------*/
 @media (max-width: 587px){
@@ -832,6 +839,10 @@ footer a{
     }
     .datumtext{
         line-height:20px;
+    }
+/*----------------------Galerie-----------------*/
+    .prev, .next {
+        top: 15%;
     }
 }
 /*---------------------- ABOUT --------------------------------*/
@@ -885,6 +896,10 @@ footer a{
     .insta{
         margin-right:10px;
     }
+/*--------Galerie-----------*/
+     .prev, .next {
+        top: 10%;
+     }
 }
 
 /*---------NEWS-------------*/
