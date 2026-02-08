@@ -352,16 +352,36 @@ margin-top:100px;
   .textnews p{
     text-align:justify;
   }
-  .textnews a {
+    .textnews a {
     font-size: 26px !important;
     color: black !important;
     font-weight: 800;
-    text-decoration: underline;
+    font-style: italic;
 }
 .textnews a:hover {
     color: #09ee27 !important;
 }
   /*------------------ GALERIE -------------------------*/
+  .galeria-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 191px;
+    flex-direction:column;
+  }
+  .galeria-box section {
+    margin: auto;
+  }
+  .galeria-box section p {
+    font-size: 21px;
+  }
+  .galeria-box section p a {
+    color: #092b13;
+    font-weight: 700;
+    font-style: italic;
+   }
+   .galeria-box section p a:hover {
+    color: #09ee27;
+}   
 
             /*---- Això és el container de les totes fotos  -----*/
             .slideshow-container {
@@ -711,6 +731,20 @@ footer a{
 /*------------------------- GALLERY ------------------------*/
 
 @media screen and (max-width: 810px){
+    .galeria-box {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .galeria-box section p {
+        font-size: 19px;
+        line-height: 21px;
+    }
+    section {
+        width: auto;
+    }
+    video {
+        width: 100%;
+    }
     .autoriafoto{
         margin-bottom: 653px;
         margin-left: 6px;
@@ -835,12 +869,14 @@ footer a{
     }
     .datumtext{
         line-height:18px;
-    }
-   
-  
-    
+    }  
 }
-
+/*---------GALERIE-------------*/
+@media (max-width: 490px) {
+    .galeria-box section p {
+        font-size: 17px;
+    }
+}
 /*---------KONTAKT--------------*/
 @media (max-width:393px){
     .kontakt{
