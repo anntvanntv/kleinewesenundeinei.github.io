@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="disseny/Huevo_logo_favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Figuren</title>
+</head>
+<body>
+
+ 
+    <nav>
+        <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+            <i class="fa fa-bars" style="font-size:36px"></i>
+         </label>   
+          <div class="marcologo"> 
+            <label class="logo"><a href="index.html"><img src="disseny/Huevo_logo.png" alt="logo"></a></label>
+             </div> <!--marcologo-->  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="figuren.html">Figuren</a></li>
+            <li><a  href="galerie.html">Galerie</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a  href="about.html">About</a></li>    
+        </ul>
+    </nav>
+
+     
+    <div class="wrap">
+        
+            <div data-aos="fade-right">
+                <div id="ei" class="fotos">
+                    <!-- <p>Aus dem Ei kam...</p> -->
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="dibuixos/Finals/5.Oufinal.png" style="width:100%">
+                        <img src="dibuixos/Finals/5.Oufinalmobil.png" alt="maleta" style="width:100%">
+                    </picture> 
+                    <audio src="veus/haaaalloou.mp3"></audio>                        
+                </div>                    
+            </div>
+            
+
+            <div data-aos="fade-left">
+                <div id="cocodril" class="fotos">
+                    <!-- <p>Was kann das Krokodil?</p>  -->
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="dibuixos/Finals/26.CocodrilsFinal.png" style="width:100%">
+                        <img src="dibuixos/Finals/26.CocodrilsFinalMobil.png" alt="krokodil" style="width:100%">
+                    </picture>           
+                    <audio src="veus/cocodrilohandtuch.mp3"></audio>
+                </div>  
+            </div>
+             
+
+            <div data-aos="fade-right"> 
+                <div id="medusas" class="fotos">
+                    <!-- <p>Was können die Quallen?</p>    -->
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="dibuixos/Finals/32.MedusasFinal.png" style="width:100%">
+                        <img src="dibuixos/Finals/32.MedusasFinalMobil.png" alt="qualle" style="width:100%">
+                    </picture>  
+                    <audio src="Pop Nilsson Edit 1 Export 2.mp3"></audio>
+                </div>
+            </div>
+            
+
+            <div data-aos="fade-left">
+                <div id="pajarraco" class="fotos">
+                    <!-- <p>Was kann der Vogel?</p> -->
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="dibuixos/Finals/22.OcellFinal.png" style="width:100%">
+                        <img src="dibuixos/Finals/22.OcellFinalMobil.png" alt="vogel" style="width:100%">
+                    </picture>  
+                    <audio src="veus/gutversteckenocell.mp3"></audio>
+                </div>
+            </div>
+            
+
+            <div data-aos="fade-right">
+                <div id="serpiente" class="fotos">
+                    <!-- <p>Was kann die Schlange?</p> -->
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="dibuixos/Finals/8.SerpsFinal.png" style="width:100%">
+                        <img src="dibuixos/Finals/8.SerpsFinalMobil.png" alt="schlange" style="width:100%">
+                    </picture>  
+                    <audio src="veus/serpridipayachi.mp3"></audio>
+                </div>
+            </div>
+           
+    </div>
+      
+     <!----wrap-->
+     
+        <footer>
+            <p> &copy kleinewesenundeinei 2026</p>
+            <p><a href="about.html#impressum">Contact</p></a> 
+            <p><a href="about.html#impressum">Impressum</p></a>
+        </footer>
+    </footer>
+      
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     
+<script>
+    AOS.init({
+        duration: 1200,
+    }); 
+    </script>
+<script src="script1.js"></script>
+<script>
+function addRem() {
+    const check = document.getElementById("check");
+
+        if (check.checked) {
+            document.body.style.overflow = "hidden"; 
+            
+        }   else{
+            document.body.style.overflow = "";
+            }
+    }
+
+
+
+
+check.addEventListener("click", addRem);
+</script>
+</body>
+
+
+</html>
