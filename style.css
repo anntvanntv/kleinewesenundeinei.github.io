@@ -858,6 +858,10 @@ main .theaterstück h3, .uberblick h3, .mar h3, main h3 {
         margin: 40px 6px;
     }
 
+    .galeria-fotos {
+        padding: 23px;
+    }
+
 /*----------------------------ABOUT---------------------------------*/
     .mar {
         flex-direction: column;
